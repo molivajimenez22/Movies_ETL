@@ -13,7 +13,7 @@ For this analysis, I created an automated pipeline that takes in new data, perfo
 ### Results
 Using Python, I cleaned, merged datasets, and exported two new tables into PostgresSQL. 
 
-***Write an ETL Function to Read Three Data Files***
+**Write an ETL Function to Read Three Data Files**
 
       1. File 1: wiki_movies_df
       
@@ -30,7 +30,7 @@ Using Python, I cleaned, merged datasets, and exported two new tables into Postg
 <p align="center" width="100%">
     <img width="66%" src="https://github.com/molivajimenez22/Movies_ETL/blob/main/Resources/ratings.png">
   
-***Extract & transform Wikipidia and Kaggle Data***
+**Extract and Transform Wikipedia and Kaggle Data**
   
 [Extract & Transform Wikipedia Data](https://github.com/molivajimenez22/Movies_ETL/blob/main/ETL_clean_wiki_movies.ipynb)
  
@@ -42,5 +42,22 @@ Using Python, I cleaned, merged datasets, and exported two new tables into Postg
   
 [Extract & Transform Kaggle Data](https://github.com/molivajimenez22/Movies_ETL/blob/main/ETL_clean_kaggle_data.ipynb)
   
-  <p align="center" width="100%">
+<p align="center" width="100%">
     <img width="66%" src="https://github.com/molivajimenez22/Movies_ETL/blob/main/Resources/Clean_Kaggle2.png">
+    
+ **Create the Movie Database with two tables**
+    
+<p align="center" width="100%">
+    <img width="66%" src="https://github.com/molivajimenez22/Movies_ETL/blob/main/Resources/Database_1.png">
+  
+<p align="center" width="100%">
+    <img width="66%" src="https://github.com/molivajimenez22/Movies_ETL/blob/main/Resources/Databse_2.png">  
+  
+### Summary
+
+Three files were extracted:
+  1. Wikipedia (json)
+  2. Kaggle Movie 
+  3. Kaggle Ratings
+  
+Then I transformed and merged them. Both the movie and rating files were loaded into a PostSQLA movies and ratings file were loaded into a PostgreSQL database that can be easily accessed.
